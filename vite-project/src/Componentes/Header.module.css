@@ -5,8 +5,8 @@
     color: white; */
     font-family: 'roboto',sans-serif;
     color: #fff;
-    background-color: rgb(163,34,255);
-    padding: 17px;
+    background-color: black;
+    padding: 5px;
 }
 
 .menu{
@@ -17,5 +17,5 @@
 
 .linkmenu{
     text-decoration: none;
-    color: #fff;
+    color:rgb(136, 85, 206);
 }

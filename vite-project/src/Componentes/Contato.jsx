@@ -18,6 +18,9 @@ export function Contato() {
     // <h1>{props.nomePagina}</h1>
 
     <Box>
+      <center>
+        Formulário de Cadastro
+      </center>
       <Flex>
         <Center
           w="100%"
@@ -27,67 +30,72 @@ export function Contato() {
           p="2"
           boxShadow={"0 1px 2px #ccc"}
         >
-          <FormControl>
+          <FormControl display='flex' flexDir='column'gap='4'>
 
-            <HStack>
-              <Box>
-                <FormLabel>Nome Completo</FormLabel>
+            <HStack spacing='5'> 
+              <Box w='100%'>
+                <FormLabel fontSize='15px'>Nome Completo</FormLabel>
                 <Input id='nome' placeholder='Nome Completo' />
-                
               </Box>
-              <Box>
-                <FormLabel>E-mail</FormLabel>
-                <Input id='email' placeholder='E-mail' />  
-              </Box>
-             
-            </HStack>
+
+              <Box w='100%'>
+          <FormLabel fontSize='15px'>CPF</FormLabel>
+          <Input id='cpf' type='number' placeholder='CPF' />
+          </Box>
+           </HStack>
 
             <HStack>
-              <Box>
-                <FormLabel>Data Nascimento</FormLabel>
+              <Box w='100%'>
+                <FormLabel fontSize='15px'>Data Nascimento</FormLabel>
                 <Input id='nasc' placeholder='Data de Nascimento' />
               </Box>
-              <Box>
-                <FormLabel>Naturalidade</FormLabel>
-                <Input id='natural' placeholder='Naturalidade' />
-              </Box>
-            </HStack>
 
-            <HStack>
-              <Box>
-                <FormLabel>Celular</FormLabel>
-                <Input id='cel' type="number" placeholder='Celular' />
+          <Box w='100%'>
+            <FormLabel fontSize='15px'>Telefone|Celular</FormLabel>
+            <Input id='TEL' type="number" placeholder='Telefone|Celular' />
+          </Box>
+            </HStack>      
+            
+            <HStack spacing='5'>
+              <Box w='100%'>
+                <FormLabel fontSize='15px'>Logradouro|Bairro</FormLabel>
+                <Input id='endereco' placeholder='Logradouro|Bairro' />
               </Box>
-              <Box>
-                <FormLabel>Telefone</FormLabel>
-                <Input id='tel' type="number" placeholder='Telefone' />
-              </Box>
-            </HStack>
 
-            <HStack>
-              <Box>
-                <FormLabel>Endereço</FormLabel>
-                <Input id='endereco' placeholder='Endereço' />
-              </Box>
-              <Box>
-                <FormLabel>Cidade</FormLabel>
-                <Input id='cidade' placeholder='Cidade' />
-              </Box>
-            </HStack>
-
-            <HStack>
-              <Box>
-                <FormLabel>Sexo</FormLabel>
-                <RadioGroup>
-                <HStack>
+              <Box w='100%'> 
+     <FormLabel fontSize='15px'>Cidade|Estado</FormLabel>
+   <Input id='end' placeholder='Cidade|Estado' />
+   </Box>
+      </HStack> 
+              <HStack spacing='5'>
+            <Box w='100%'> 
+   <FormLabel fontSize='15px'>Estado|País</FormLabel>
+   <Input id='est' placeholder='Estado|País' />
+ </Box>
+ <Box w='100%'> 
+   <FormLabel fontSize='15px'>CEP</FormLabel>
+   <Input id='cep' placeholder='CEP' />
+ </Box>
+  </HStack>
+            <HStack spacing='5'>
+              <Box w='100%'>
+                
+                <RadioGroup >
+                <HStack alignItems='flex-start'>
+                <FormLabel fontSize='17px'>Sexo</FormLabel>
                   <Radio value="Masculino">Masculino</Radio>
                   <Radio value="Feminino">Feminino</Radio>
                   </HStack>
                 </RadioGroup>
               </Box>
             </HStack>
-            <HStack>
-              <Button>
+            <HStack justifyContent='Center'>
+              <Button w={200}
+              fontWeight={600}
+                type='submit'
+                bg='black.000'
+                fontSize='20px'
+                color='purple.500'             >
                 Enviar
               </Button>
             </HStack>
