@@ -23,7 +23,7 @@ function App() {
     <Route path='/contato' element={<Contato nomePagina='Contato' />} />
     </Routes>
 
-    {<Footer nomeFooter='Atividade Prática' />}
+    {<Footer nomeFooter='© Desenvolvido por Viviane Santos | Maio 2024' />}
 
     </div>
 
